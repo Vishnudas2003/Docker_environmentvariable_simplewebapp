@@ -1,9 +1,9 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
+
+load_dotenv()  # Load variables from .env
 
 app = Flask(__name__)
-
-
 
 color = os.environ.get('APP_COLOR')
 
