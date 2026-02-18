@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template
+from dotenv import load_dotenv
 
 load_dotenv()  # Load variables from .env
 
@@ -13,4 +14,4 @@ def main():
    return render_template('index.html', color=color)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5050)
